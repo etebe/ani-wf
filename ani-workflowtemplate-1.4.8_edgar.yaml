@@ -10,9 +10,9 @@ spec:
   serviceAccountName: argo # edit
   parallelism: 2000 # edit
   ttlStrategy:
-    secondsAfterCompletion: 86400
-    secondsAfterSuccess: 86400
-    secondsAfterFailure: 86400
+    secondsAfterCompletion: 3600
+    secondsAfterSuccess: 3600
+    secondsAfterFailure: 3600
   podGC:
     strategy: OnPodCompletion
   podDisruptionBudget:
